@@ -584,7 +584,7 @@ static void *sock_poll_thread(void *arg)
             if(need_process_data_fd)
                 process_data_sock(h, pfds, ret);
         }
-        else {APPL_TRACE_DEBUG("no data, select ret: %d", ret)};
+        else {APPL_TRACE_DEBUG("no data, select ret: %d", ret);};
     }
     ts[h].thread_id = -1;
     APPL_TRACE_DEBUG("socket poll thread exiting, h:%d", h);

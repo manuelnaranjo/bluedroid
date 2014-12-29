@@ -2155,7 +2155,7 @@ tSDP_DISC_CMPL_CB *bta_hl_allocate_spd_cback(tBTA_HL_SDP_OPER sdp_oper, UINT8 ap
 
     if (i == BTA_HL_NUM_SDP_CBACKS)
     {
-        APPL_TRACE_WARNING("No scb is available to allocate")
+        APPL_TRACE_WARNING("No scb is available to allocate");
     }
     else
     {

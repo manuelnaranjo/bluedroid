@@ -117,11 +117,12 @@ BOOLEAN avrc_is_valid_player_attrib_value(UINT8 attrib, UINT8 value)
     if (attrib >= AVRC_PLAYER_SETTING_LOW_MENU_EXT)
        result = TRUE;
 
-    if (!result)
+    if (!result) {
         AVRC_TRACE_ERROR(
             "avrc_is_valid_player_attrib_value() found not matching attrib(x%x)-value(x%x) pair!",
             attrib, value);
-
+    }
+    
     return result;
 }
 

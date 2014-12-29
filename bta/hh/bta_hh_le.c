@@ -1696,7 +1696,7 @@ static void bta_hh_le_search_hid_included(tBTA_HH_DEV_CB *p_dev_cb)
                                                   char_result.char_id.inst_id,
                                                   prop) == NULL)
             {
-                APPL_TRACE_ERROR("Add battery report entry failed !!!")
+                APPL_TRACE_ERROR("Add battery report entry failed !!!");
             }
 
             /* read the battery characteristic */
