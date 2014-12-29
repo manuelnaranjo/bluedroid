@@ -1895,7 +1895,7 @@ BOOLEAN bta_hl_validate_peer_cfg(UINT8 app_idx, UINT8 mcl_idx, UINT8 mdl_idx,
     {
         APPL_TRACE_DEBUG("mdep_id %d peer_mdep_id %d",p_rec->mdep_cfg[i].mdep_id , peer_mdep_id);
         APPL_TRACE_DEBUG("mdep_role %d peer_mdep_role %d",p_rec->mdep_cfg[i].mdep_role,
-                          peer_mdep_role)
+                          peer_mdep_role);
         if ( (p_rec->mdep_cfg[i].mdep_id == peer_mdep_id) &&
              (p_rec->mdep_cfg[i].mdep_role == peer_mdep_role))
         {

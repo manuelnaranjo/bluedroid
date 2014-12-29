@@ -805,12 +805,12 @@ extern UINT8 btif_trace_level;
 #else
 /* define traces for Application */
 
-#define BTIF_TRACE_ERROR(...)
-#define BTIF_TRACE_WARNING(...)
-#define BTIF_TRACE_API(...)
-#define BTIF_TRACE_EVENT(...)
-#define BTIF_TRACE_DEBUG(...)
-#define BTIF_TRACE_VERBOSE(...)
+#define BTIF_TRACE_ERROR(...) ((void) 0)
+#define BTIF_TRACE_WARNING(...) ((void) 0)
+#define BTIF_TRACE_API(...) ((void) 0)
+#define BTIF_TRACE_EVENT(...) ((void) 0)
+#define BTIF_TRACE_DEBUG(...) ((void) 0)
+#define BTIF_TRACE_VERBOSE(...) ((void) 0)
 
 #endif
 
@@ -828,12 +828,12 @@ extern UINT8 btif_trace_level;
 #else
 /* define traces for Application */
 
-#define APPL_TRACE_ERROR(...)
-#define APPL_TRACE_WARNING(...)
-#define APPL_TRACE_API(...)
-#define APPL_TRACE_EVENT(...)
-#define APPL_TRACE_DEBUG(...)
-#define APPL_TRACE_VERBOSE(...)
+#define APPL_TRACE_ERROR(...) ((void)0)
+#define APPL_TRACE_WARNING(...) ((void)0)
+#define APPL_TRACE_API(...) ((void)0)
+#define APPL_TRACE_EVENT(...) ((void)0)
+#define APPL_TRACE_DEBUG(...) ((void)0)
+#define APPL_TRACE_VERBOSE(...) ((void)0)
 
 #endif
 

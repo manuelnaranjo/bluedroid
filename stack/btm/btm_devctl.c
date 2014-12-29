@@ -1195,9 +1195,10 @@ void btm_reset_ctrlr_complete ()
         }
     }
 
-    if (!found)
+    if (!found) {
         BTM_TRACE_WARNING ("btm_reset_ctrlr_complete: NONE of local controller features is set");
-
+    }
+    
     max_page_number = i;
 
     BTM_TRACE_DEBUG ("btm_reset_ctrlr_complete: max_page_number: %d", max_page_number);

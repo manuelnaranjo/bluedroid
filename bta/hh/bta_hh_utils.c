@@ -73,7 +73,7 @@ UINT8  bta_hh_find_cb(BD_ADDR bda)
         {
 #if BTA_HH_DEBUG
             APPL_TRACE_DEBUG("found kdev_cb[%d] hid_handle = %d ", xx,
-                                bta_hh_cb.kdev[xx].hid_handle)
+                                bta_hh_cb.kdev[xx].hid_handle);
 #endif
             return xx;
         }

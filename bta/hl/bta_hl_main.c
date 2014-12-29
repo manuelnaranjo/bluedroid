@@ -827,7 +827,7 @@ static void bta_hl_api_cch_open(tBTA_HL_CB *p_cb, tBTA_HL_DATA *p_data)
         {
             /* Only one MCL per BD_ADDR */
             status = BTA_HL_STATUS_DUPLICATE_CCH_OPEN;
-            APPL_TRACE_DEBUG("bta_hl_api_cch_open: CCH already open: status =%d",status)
+            APPL_TRACE_DEBUG("bta_hl_api_cch_open: CCH already open: status =%d",status);
             p_acb = BTA_HL_GET_APP_CB_PTR(app_idx);
             p_mcb = BTA_HL_GET_MCL_CB_PTR(app_idx, mcl_idx);
             if (p_acb->p_cback)
