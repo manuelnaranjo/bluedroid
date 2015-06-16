@@ -244,7 +244,7 @@ UINT8  bta_av_get_scb_handle ( tBTA_AV_SCB *p_scb, UINT8 local_sep )
             (p_scb->seps[xx].codec_type == p_scb->codec_type))
             return (p_scb->seps[xx].av_handle);
     }
-    APPL_TRACE_DEBUG(" bta_av_get_scb_handle appropiate sep_type not found");
+    APPL_TRACE_DEBUG(" bta_av_get_scb_handle appropiate sep_type not found")
     return 0; /* return invalid handle */
 }
 
@@ -265,7 +265,7 @@ UINT8  bta_av_get_scb_sep_type ( tBTA_AV_SCB *p_scb, UINT8 tavdt_handle)
         if (p_scb->seps[xx].av_handle == tavdt_handle)
             return (p_scb->seps[xx].tsep);
     }
-    APPL_TRACE_DEBUG(" bta_av_get_scb_sep_type appropiate handle not found");
+    APPL_TRACE_DEBUG(" bta_av_get_scb_sep_type appropiate handle not found")
     return 3; /* return invalid sep type */
 }
 

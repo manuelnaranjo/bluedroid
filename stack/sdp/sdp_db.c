@@ -308,9 +308,7 @@ UINT32 SDP_CreateRecord (void)
 
         return (p_db->record[p_db->num_records - 1].record_handle);
     }
-    else {
-        SDP_TRACE_ERROR("SDP_CreateRecord fail, exceed maximum records:%d", SDP_MAX_RECORDS);
-    }
+    else SDP_TRACE_ERROR("SDP_CreateRecord fail, exceed maximum records:%d", SDP_MAX_RECORDS);
 #endif
         return (0);
 }
@@ -592,9 +590,8 @@ BOOLEAN SDP_AddSequence (UINT32 handle,  UINT16 attr_id, UINT16 num_elem,
                 GKI_freebuf(p_buff);
                 return FALSE;
             }
-            else {
+            else
                 SDP_TRACE_ERROR ("SDP_AddSequence - too long, add %d elements of %d", xx, num_elem);
-            }
             break;
         }
     }

@@ -4771,7 +4771,7 @@ static void bta_dm_observe_results_cb (tBTM_INQ_RESULTS *p_inq, UINT8 *p_eir)
     tBTA_DM_SEARCH     result;
     tBTM_INQ_INFO      *p_inq_info;
     UINT16             service_class;
-    APPL_TRACE_DEBUG("bta_dm_observe_results_cb");
+    APPL_TRACE_DEBUG("bta_dm_observe_results_cb")
 
     bdcpy(result.inq_res.bd_addr, p_inq->remote_bd_addr);
     result.inq_res.rssi = p_inq->rssi;

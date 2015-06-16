@@ -612,9 +612,8 @@ void pan_data_buf_ind_cb (UINT16 handle,
         {
             PAN_TRACE_EVENT ("pan_data_buf_ind_cb - destination PANU found and sending the data");
             result = BNEP_WriteBuf (dst_pcb->handle, dst, p_buf, protocol, src, ext);
-            if (result != BNEP_SUCCESS && result != BNEP_IGNORE_CMD) {
+            if (result != BNEP_SUCCESS && result != BNEP_IGNORE_CMD)
                 PAN_TRACE_ERROR ("Failed to write data for PAN connection handle %d", dst_pcb->handle);
-            }
             return;
         }
     }

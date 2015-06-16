@@ -315,14 +315,10 @@ BT_API UINT8 BTAPP_SetTraceLevel( UINT8 new_level )
 
 BT_API UINT8 BTIF_SetTraceLevel( UINT8 new_level )
 {
-#if (defined(BT_TRACE_BTIF) && (BT_TRACE_BTIF==TRUE))
     if (new_level != 0xFF)
         btif_trace_level = new_level;
 
     return (btif_trace_level);
-#else
-    return 0;
-#endif
 }
 
 BTU_API UINT8 BTU_SetTraceLevel( UINT8 new_level )

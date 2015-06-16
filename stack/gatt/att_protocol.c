@@ -431,10 +431,9 @@ BT_HDR *attp_build_sr_msg(tGATT_TCB *p_tcb, UINT8 op_code, tGATT_SR_MSG *p_msg)
         break;
     }
 
-    if (!p_cmd) {
+    if (!p_cmd)
         GATT_TRACE_ERROR("No resources");
-    }
-    
+
     return p_cmd;
 }
 

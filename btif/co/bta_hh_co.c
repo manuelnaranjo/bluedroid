@@ -67,7 +67,7 @@ static int uhid_event(btif_hh_device_t *p_dev)
     memset(&ev, 0, sizeof(ev));
     if(!p_dev)
     {
-        APPL_TRACE_ERROR("%s: Device not found",__FUNCTION__);
+        APPL_TRACE_ERROR("%s: Device not found",__FUNCTION__)
         return -1;
     }
     ret = read(p_dev->fd, &ev, sizeof(ev));
